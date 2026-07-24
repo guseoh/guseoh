@@ -1,0 +1,25 @@
+name: Update GitHub stats gist
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-gist:
+    if: ${{ vars.PINNED_GISTS_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update GitHub stats gist
+        run: npx --yes github-stats-box@1
+        env:
+          GH_TOKEN: ${{ secrets.PINNED_GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GITHUB_STATS_GIST_ID }}
+          ALL_COMMITS: true
+          K_FORMAT: false

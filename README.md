@@ -127,6 +127,18 @@ Java·Spring·JPA·HTTP·네트워크·인프라를 학습하고 검증한 내�
 
 <br>
 
+## 📝 Latest Blog Posts
+
+<!-- BLOG-POST-LIST:START -->
+- 최신 글 목록은 워크플로 첫 실행 후 자동으로 표시됩니다.
+<!-- BLOG-POST-LIST:END -->
+
+<p align="right">
+  <a href="https://guseoh.github.io/blog/">전체 글 보기 →</a>
+</p>
+
+<br>
+
 ## 🐾 GitAnimals
 
 <div align="center">

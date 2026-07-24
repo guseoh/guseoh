@@ -20,6 +20,6 @@ jobs:
         run: npx --yes github-stats-box@1
         env:
           GH_TOKEN: ${{ secrets.PINNED_GIST_TOKEN }}
-          GIST_ID: ${{ secrets.GITHUB_STATS_GIST_ID }}
+          GIST_ID: d63c5e97722a08c5a78fa4035eedbc8f
           ALL_COMMITS: true
           K_FORMAT: false

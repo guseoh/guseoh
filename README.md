@@ -71,8 +71,6 @@
 
 Spring Boot MVC와 Thymeleaf 기반의 커뮤니티 프로젝트입니다.
 
-- 게시글·댓글, 세션 로그인과 OAuth2 인증·인가 구현
-- 원자적 UPDATE를 활용한 조회수 동시성 문제 개선
 - AWS EC2·RDS 배포와 GitHub Actions 기반 CI/CD 구성
 - **Tech:** Java 17, Spring Boot, Spring Security, Spring Data JPA, Thymeleaf, MySQL, AWS
 - **Repository:** [guseoh/board](https://github.com/guseoh/board)

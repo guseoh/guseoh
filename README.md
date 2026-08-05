@@ -128,9 +128,9 @@ Java·Spring·JPA·HTTP·네트워크·인프라를 학습하고 검증한 내�
 ## 📝 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [인증과 인가는 무엇일까?](https://guseoh.github.io/blog/security/basic1/)
 - [자바 패키지는 무엇일까?](https://guseoh.github.io/blog/java/%ED%8C%A8%ED%82%A4%EC%A7%80/package/)
 - [자바의 추상화는 무엇일까?](https://guseoh.github.io/blog/java/%EC%B6%94%EC%83%81%ED%99%94/abstraction/)
-- [자바의 상속은 무엇일까?](https://guseoh.github.io/blog/java/%EC%83%81%EC%86%8D/extends/)
 <!-- BLOG-POST-LIST:END -->
 
 <p align="right">

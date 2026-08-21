@@ -128,9 +128,9 @@ Java·Spring·JPA·HTTP·네트워크·인프라를 학습하고 검증한 내�
 ## 📝 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?](https://guseoh.github.io/blog/jpa/persistence-context/)
+- [JPA 연관관계 매핑: 객체 참조와 외래 키](https://guseoh.github.io/blog/jpa/relationship-mapping/)
 - [Spring Security는 무엇을 해결할까?](https://guseoh.github.io/blog/security/basic3/)
-- [쿠키와 세션 기반 인증은 어떻게 동작할까?](https://guseoh.github.io/blog/security/basic2/)
-- [인증과 인가는 무엇일까?](https://guseoh.github.io/blog/security/basic1/)
 <!-- BLOG-POST-LIST:END -->
 
 <p align="right">

@@ -1,6 +1,6 @@
 <div align="center">
 
-# guseoh
+# 오지훈
 
 **Java · Spring Backend Developer**
 

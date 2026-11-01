@@ -2,7 +2,7 @@
 
 # guseoh
 
-### Java · Spring Backend Developer
+**Java · Spring Backend Developer**
 
 Java와 Spring을 중심으로 백엔드 개발과 시스템 설계를 공부하고 있습니다.  
 문제를 재현하고, 코드와 테스트·측정 결과를 바탕으로 개선하는 과정을 중요하게 생각합니다.

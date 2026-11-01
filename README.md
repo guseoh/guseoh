@@ -24,7 +24,6 @@ Java와 Spring으로 백엔드 시스템을 만들고, 설계한 내용을 코�
 
 ## Projects
 
-### Featured Project
 
 <details>
 <summary><strong>PawCycle Commerce</strong> — 반려동물 소모품 구매와 정기배송</summary>
@@ -39,7 +38,6 @@ Java와 Spring으로 백엔드 시스템을 만들고, 설계한 내용을 코�
 
 </details>
 
-### Learning Projects
 
 <details>
 <summary><strong>CSForge</strong> — CS 개념 및 학습 이력 관리 플랫폼</summary>

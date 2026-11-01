@@ -1,131 +1,71 @@
-<div align="center">
+# guseoh
 
-<h1>Java · Spring Backend Developer</h1>
+**Java · Spring Backend Development**
 
-<h3>문제가 발생한 이유를 찾고 직접 검증하며 개선하는 과정을 좋아합니다.</h3>
+문제의 원인을 재현하고, 설계 선택을 코드와 데이터로 검증하는 개발을 지향합니다.
 
-<p>Java와 Spring을 중심으로 백엔드 개발을 공부하고 있습니다.</p>
+Java와 Spring을 중심으로 백엔드 시스템을 만들고 있습니다. 기능 구현뿐 아니라 데이터 정합성, 트랜잭션, 성능, 운영 안정성을 함께 고민하고, 결정의 근거와 검증 결과를 기록합니다.
 
-<a href="https://guseoh.github.io/">
-  <img src="https://img.shields.io/badge/Tech_Blog-181717?style=for-the-badge&logo=github&logoColor=white" alt="Tech Blog"/>
-</a>
+[Tech Blog](https://guseoh.github.io/) · [Repositories](https://github.com/guseoh?tab=repositories)
 
-</div>
+## Focus
 
-<br>
+- **Backend & Data** — 도메인 모델링, API 설계, 인증·인가, 트랜잭션과 데이터 정합성
+- **Reliability & Operations** — 멱등성, 장애 격리, 성능 측정, 모니터링과 복구
+- **Engineering Practice** — 테스트·CI 기반 검증, 설계 선택과 Trade-off 기록, Codex를 활용한 개발·리뷰
 
-## 🛠 Tech Stack
+## Selected Projects
 
-### Backend
+### [PawCycle Commerce](https://github.com/guseoh/pawcycle-commerce) — Commerce / Subscription
 
-<p>
-  <img height="28" src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
-  <img height="28" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot"/>
-  <img height="28" src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="Spring Security"/>
-  <img height="28" src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Data JPA"/>
-  <img height="28" src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" alt="Hibernate"/>
-  <img height="28" src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=thymeleaf&logoColor=white" alt="Thymeleaf"/>
-  <img height="28" src="https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white" alt="Gradle"/>
-  <img height="28" src="https://img.shields.io/badge/JUnit5-25A162?style=flat-square&logo=junit5&logoColor=white" alt="JUnit 5"/>
-</p>
+반려동물 소모품 구매와 정기배송을 구현하고, 실제 문제를 재현·측정하며 신뢰성을 개선하는 프로젝트입니다.
 
-### Database & Infrastructure
+- 정기배송 생명주기, 주문·결제·배송 상태 모델과 회원별 권한 경계 구현
+- 멱등성 기반 중복 요청 방지, 구독별 트랜잭션 장애 격리 및 정합성 검증
+- SQL 조회 수를 측정한 뒤 N+1 문제를 개선하고, Prometheus·Grafana 기반 관측 자산 구성
+- **기술:** Java, Spring Boot, Spring Security, JPA, MySQL, Flyway, Next.js, Docker
 
-<p>
-  <img height="28" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-  <img height="28" src="https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white" alt="Flyway"/>
-  <img height="28" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-  <img height="28" src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker Compose"/>
-  <img height="28" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="Amazon AWS"/>
-  <img height="28" src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx"/>
-  <img height="28" src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/>
-  <img height="28" src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
-</p>
+검증 기록: [구독 처리 실패 격리](https://github.com/guseoh/pawcycle-commerce/pull/106) · [멱등성 보존 및 정리](https://github.com/guseoh/pawcycle-commerce/pull/108)
 
-### Frontend & Blog
+> 현재 상시 운영 중인 프로덕션 배포는 없으며, 배포·장애 대응 기록은 저장소에 보존하고 있습니다.
 
-<p>
-  <img height="28" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-  <img height="28" src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
-  <img height="28" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img height="28" src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-  <img height="28" src="https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white" alt="Astro"/>
-</p>
+### [CSForge](https://github.com/guseoh/csforge) — CS / Backend Learning Platform
 
-### Tools
+Java·Spring·CS 개념을 구조화해 학습하고, 콘텐츠와 개인 학습 데이터를 함께 관리하는 플랫폼입니다.
 
-<p>
-  <img height="28" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-  <img height="28" src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-  <img height="28" src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" alt="Notion"/>
-</p>
+- 학습 영역·주제·개념·문항을 구조화한 콘텐츠 모델과 학습 UI
+- 콘텐츠 가져오기 전 Preview / Diff / Confirm 및 반복 실행 가능한 동기화 흐름
+- 기존 학습 이력을 보호하는 데이터 처리와 테스트·자동 검증 작업
+- **기술:** Java, Spring Boot, PostgreSQL, React, TypeScript, Docker
 
-<br>
+[Repository](https://github.com/guseoh/csforge) · [Web](https://csforge-five.vercel.app/)
 
-## 📌 Projects
+### [Dark Todo Planner](https://github.com/guseoh/dark-todo-planner) — Personal Planning Web App
 
-<details>
-<summary><strong>Board — 개발자 커뮤니티</strong></summary>
+오늘의 할 일, 캘린더, 프로젝트, 메모를 연결한 개인 작업 관리 웹 애플리케이션입니다.
 
-<br>
+- 오늘·전체 Todo·월간/주간 캘린더·프로젝트·메모 기능 구현
+- Cloudflare Workers / D1 기반 API·데이터 관리와 백업·복원 절차 구성
+- 타입 검사, 테스트, 브라우저 E2E 및 배포 후 헬스 체크를 CI에 연결
+- **기술:** React, TypeScript, Hono, Cloudflare Workers, D1, GitHub Actions
 
-Spring Boot MVC와 Thymeleaf 기반의 커뮤니티 프로젝트입니다.
+[Repository](https://github.com/guseoh/dark-todo-planner) · [Web](https://dark-todo-planner.guseoh.workers.dev/)
 
-- AWS EC2·RDS 배포와 GitHub Actions 기반 CI/CD 구성
-- **Tech:** Java 17, Spring Boot, Spring Security, Spring Data JPA, Thymeleaf, MySQL, AWS
-- **Repository:** [guseoh/board](https://github.com/guseoh/board)
+## Learning & Writing
 
-</details>
+- **[Mini Tomcat](https://github.com/guseoh/mini-tomcat)** — Java 표준 라이브러리로 HTTP 서버·서블릿 컨테이너 내부 동작을 단계적으로 학습하는 프로젝트 (현재 기반 단계)
+- **[Tech Blog](https://guseoh.github.io/)** — Java, Spring, JPA, HTTP, 네트워크와 인프라를 이해하고 검증한 내용을 정리하는 기록 공간
 
-<details>
-<summary><strong>PawCycle Commerce — 반려동물 소모품 이커머스</strong></summary>
+## Technologies
 
-<br>
+| Area | Technologies |
+| --- | --- |
+| Backend | Java · Spring Boot · Spring Security · JPA / Hibernate |
+| Data | MySQL · PostgreSQL · Flyway |
+| Infrastructure & Quality | Docker · Nginx · GitHub Actions · Prometheus · Grafana · JUnit |
+| Frontend & Web | React · Next.js · TypeScript · Astro |
 
-개와 고양이용 소모품의 일반 구매와 정기배송을 지원하는 이커머스 프로젝트입니다.
-
-- 공개 상품 탐색부터 세션 로그인, 구독 생성·조회까지 1차 수직 MVP 구현
-- Spring Security의 세션·CSRF 보호와 인증 회원 기반 소유권 검증 적용
-- Flyway 스키마 관리와 Docker Compose·Nginx 로컬 통합 환경 구성
-- **Tech:** Java, Spring Boot, Spring Security, JPA, MySQL, Flyway, Next.js, Docker
-- **Repository:** [guseoh/pawcycle-commerce](https://github.com/guseoh/pawcycle-commerce)
-
-</details>
-
-<details>
-<summary><strong>Mini Tomcat — HTTP 서버·서블릿 컨테이너 학습</strong></summary>
-
-<br>
-
-Java 표준 라이브러리만으로 HTTP 서버와 Servlet Container의 책임을 단계별로 구현하는 학습 프로젝트입니다.
-
-- Java 17·Gradle 기반 프로젝트와 JUnit·AssertJ 테스트 환경 구성
-- 서버 설정과 애플리케이션 생명주기를 표현하는 Stage 0 기반 구현
-- TCP 연결부터 HTTP 파싱과 Servlet 처리 구조까지 단계별 학습 예정
-- **Tech:** Java 17, Gradle, JUnit 5, AssertJ
-- **Repository:** [guseoh/mini-tomcat](https://github.com/guseoh/mini-tomcat)
-
-</details>
-
-<details>
-<summary><strong>Tech Blog — 개발 학습과 트러블슈팅 기록</strong></summary>
-
-<br>
-
-Java·Spring·JPA·HTTP·네트워크·인프라를 학습하고 검증한 내용을 기록하는 기술 블로그입니다.
-
-- Markdown 기반 콘텐츠와 Book·Series·Category 탐색 구조 구성
-- 본문 검색, RSS, sitemap, SEO와 라이트·다크 모드 지원
-- GitHub Actions와 GitHub Pages 기반 자동 검증·배포 구성
-- **Tech:** Astro, TypeScript, Markdown, GitHub Actions, GitHub Pages
-- **Site:** [guseoh.github.io](https://guseoh.github.io/)
-- **Repository:** [guseoh/guseoh.github.io](https://github.com/guseoh/guseoh.github.io)
-
-</details>
-
-<br>
-
-## 📝 Latest Blog Posts
+## Recent Writing
 
 <!-- BLOG-POST-LIST:START -->
 - [JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?](https://guseoh.github.io/blog/jpa/persistence-context/)
@@ -133,31 +73,4 @@ Java·Spring·JPA·HTTP·네트워크·인프라를 학습하고 검증한 내�
 - [Spring Security는 무엇을 해결할까?](https://guseoh.github.io/blog/security/basic3/)
 <!-- BLOG-POST-LIST:END -->
 
-<p align="right">
-  <a href="https://guseoh.github.io/blog/">전체 글 보기 →</a>
-</p>
-
-<br>
-
-## 🐾 GitAnimals
-
-<div align="center">
-
-<a href="https://www.gitanimals.org/">
-  <img
-    src="https://render.gitanimals.org/farms/guseoh"
-    width="600"
-    alt="GitAnimals Farm"
-  />
-</a>
-
-</div>
-
-<!--
-학력이나 자격증을 공개하고 싶을 때만 아래 주석을 해제하세요.
-
-## 🎓 Education & Certifications
-
-- 학력:
-- 자격증:
--->
+[More posts](https://guseoh.github.io/blog/)

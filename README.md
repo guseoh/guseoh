@@ -32,7 +32,13 @@ Java와 Spring으로 백엔드 시스템을 만들고, 설계한 내용을 코�
 
 정기배송의 전체 흐름을 구현하면서 데이터 정합성과 운영 안정성을 검증하는 커머스 프로젝트입니다. 상품 구매·구독 변경·배송 일정 관리부터 멱등성, 구독별 트랜잭션 실패 격리, N+1 측정 및 개선까지 다루고 있습니다.
 
-**핵심 경험** · 멱등성 · 트랜잭션 실패 격리 · N+1 측정 및 개선
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/architecture/pawcycle-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/architecture/pawcycle-light.svg" />
+    <img src="./assets/architecture/pawcycle-light.svg" width="760" alt="PawCycle Commerce — 주요 구성 요소와 데이터 흐름을 요약한 아키텍처" />
+  </picture>
+</p>
 
 [Repository](https://github.com/guseoh/pawcycle-commerce) · [설계·검증 기록](https://github.com/guseoh/pawcycle-commerce#readme)
 
@@ -46,7 +52,13 @@ Java와 Spring으로 백엔드 시스템을 만들고, 설계한 내용을 코�
 
 Java·Spring·CS 개념을 영역과 주제별로 구조화하고 학습 기록과 연결한 플랫폼입니다. 콘텐츠를 반복해서 가져오거나 동기화할 때 기존 학습 데이터를 보호하는 흐름도 구현했습니다.
 
-**핵심 경험** · 콘텐츠 모델링 · Preview / Diff / Confirm · 데이터 동기화
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/architecture/csforge-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/architecture/csforge-light.svg" />
+    <img src="./assets/architecture/csforge-light.svg" width="760" alt="CSForge — 주요 구성 요소와 데이터 흐름을 요약한 아키텍처" />
+  </picture>
+</p>
 
 [Repository](https://github.com/guseoh/csforge) · [Live Demo](https://csforge-five.vercel.app/)
 
@@ -59,7 +71,13 @@ Java·Spring·CS 개념을 영역과 주제별로 구조화하고 학습 기록�
 
 할 일·월간/주간 캘린더·프로젝트 Kanban·메모를 연결한 개인 작업 관리 웹 앱입니다. 사용 경험을 개선하면서 E2E 테스트, Cloudflare D1 백업 및 배포 자동화를 구성했습니다.
 
-**핵심 경험** · 작업 관리 UX · E2E 검증 · 백업 및 배포 자동화
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/architecture/dark-todo-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/architecture/dark-todo-light.svg" />
+    <img src="./assets/architecture/dark-todo-light.svg" width="760" alt="Dark Todo Planner — 주요 구성 요소와 데이터 흐름을 요약한 아키텍처" />
+  </picture>
+</p>
 
 [Repository](https://github.com/guseoh/dark-todo-planner) · [Live Demo](https://dark-todo-planner.guseoh.workers.dev/)
 

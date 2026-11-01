@@ -1,71 +1,56 @@
+<div align="center">
+
 # guseoh
 
-**Java · Spring Backend Development**
+**Java · Spring Backend Developer**
 
-문제의 원인을 재현하고, 설계 선택을 코드와 데이터로 검증하는 개발을 지향합니다.
-
-Java와 Spring을 중심으로 백엔드 시스템을 만들고 있습니다. 기능 구현뿐 아니라 데이터 정합성, 트랜잭션, 성능, 운영 안정성을 함께 고민하고, 결정의 근거와 검증 결과를 기록합니다.
+Java와 Spring을 중심으로 백엔드 개발과 시스템 설계를 공부하고 있습니다.  
+문제를 재현하고, 코드와 테스트·측정 결과를 바탕으로 개선하는 과정을 중요하게 생각합니다.
 
 [Tech Blog](https://guseoh.github.io/) · [Repositories](https://github.com/guseoh?tab=repositories)
 
-## Focus
+</div>
 
-- **Backend & Data** — 도메인 모델링, API 설계, 인증·인가, 트랜잭션과 데이터 정합성
-- **Reliability & Operations** — 멱등성, 장애 격리, 성능 측정, 모니터링과 복구
-- **Engineering Practice** — 테스트·CI 기반 검증, 설계 선택과 Trade-off 기록, Codex를 활용한 개발·리뷰
+---
 
-## Selected Projects
+## About
 
-### [PawCycle Commerce](https://github.com/guseoh/pawcycle-commerce) — Commerce / Subscription
+- **Backend** — 도메인 모델링, API 설계, 트랜잭션과 데이터 정합성
+- **Systems** — 성능 측정, 장애 대응, 관측 및 운영 안정성
+- **Development** — 테스트와 CI를 통한 검증, 설계 근거와 학습 과정 기록
 
-반려동물 소모품 구매와 정기배송을 구현하고, 실제 문제를 재현·측정하며 신뢰성을 개선하는 프로젝트입니다.
+## Tech Stack
 
-- 정기배송 생명주기, 주문·결제·배송 상태 모델과 회원별 권한 경계 구현
-- 멱등성 기반 중복 요청 방지, 구독별 트랜잭션 장애 격리 및 정합성 검증
-- SQL 조회 수를 측정한 뒤 N+1 문제를 개선하고, Prometheus·Grafana 기반 관측 자산 구성
-- **기술:** Java, Spring Boot, Spring Security, JPA, MySQL, Flyway, Next.js, Docker
+<p>
+  <img src="https://img.shields.io/badge/Java-30363D?style=flat&amp;logo=openjdk&amp;logoColor=white" height="22" alt="Java" />
+  <img src="https://img.shields.io/badge/Spring_Boot-30363D?style=flat&amp;logo=springboot&amp;logoColor=white" height="22" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/MySQL-30363D?style=flat&amp;logo=mysql&amp;logoColor=white" height="22" alt="MySQL" />
+  <img src="https://img.shields.io/badge/PostgreSQL-30363D?style=flat&amp;logo=postgresql&amp;logoColor=white" height="22" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Docker-30363D?style=flat&amp;logo=docker&amp;logoColor=white" height="22" alt="Docker" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-30363D?style=flat&amp;logo=githubactions&amp;logoColor=white" height="22" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/React-30363D?style=flat&amp;logo=react&amp;logoColor=white" height="22" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-30363D?style=flat&amp;logo=typescript&amp;logoColor=white" height="22" alt="TypeScript" />
+</p>
 
-검증 기록: [구독 처리 실패 격리](https://github.com/guseoh/pawcycle-commerce/pull/106) · [멱등성 보존 및 정리](https://github.com/guseoh/pawcycle-commerce/pull/108)
+---
 
-> 현재 상시 운영 중인 프로덕션 배포는 없으며, 배포·장애 대응 기록은 저장소에 보존하고 있습니다.
+## Projects
 
-### [CSForge](https://github.com/guseoh/csforge) — CS / Backend Learning Platform
+### Featured Project
 
-Java·Spring·CS 개념을 구조화해 학습하고, 콘텐츠와 개인 학습 데이터를 함께 관리하는 플랫폼입니다.
+- **[PawCycle Commerce](https://github.com/guseoh/pawcycle-commerce)** — 일반 구매와 정기배송을 구현하고, 데이터 정합성과 운영 안정성을 검증하는 커머스 프로젝트입니다.
 
-- 학습 영역·주제·개념·문항을 구조화한 콘텐츠 모델과 학습 UI
-- 콘텐츠 가져오기 전 Preview / Diff / Confirm 및 반복 실행 가능한 동기화 흐름
-- 기존 학습 이력을 보호하는 데이터 처리와 테스트·자동 검증 작업
-- **기술:** Java, Spring Boot, PostgreSQL, React, TypeScript, Docker
+### Learning Projects
 
-[Repository](https://github.com/guseoh/csforge) · [Web](https://csforge-five.vercel.app/)
+- **[CSForge](https://github.com/guseoh/csforge)** — Java·Spring·CS 개념을 구조화하고 콘텐츠와 학습 기록을 관리하는 학습 플랫폼입니다. [Web](https://csforge-five.vercel.app/)
+- **[Dark Todo Planner](https://github.com/guseoh/dark-todo-planner)** — Todo·캘린더·프로젝트·메모를 통합한 개인 작업 관리 웹 앱입니다. [Web](https://dark-todo-planner.guseoh.workers.dev/)
+- **[Mini Tomcat](https://github.com/guseoh/mini-tomcat)** — Java 표준 라이브러리를 활용해 HTTP 서버와 서블릿 컨테이너의 원리를 단계별로 학습하는 프로젝트입니다.
 
-### [Dark Todo Planner](https://github.com/guseoh/dark-todo-planner) — Personal Planning Web App
+---
 
-오늘의 할 일, 캘린더, 프로젝트, 메모를 연결한 개인 작업 관리 웹 애플리케이션입니다.
+## Tech Blog
 
-- 오늘·전체 Todo·월간/주간 캘린더·프로젝트·메모 기능 구현
-- Cloudflare Workers / D1 기반 API·데이터 관리와 백업·복원 절차 구성
-- 타입 검사, 테스트, 브라우저 E2E 및 배포 후 헬스 체크를 CI에 연결
-- **기술:** React, TypeScript, Hono, Cloudflare Workers, D1, GitHub Actions
-
-[Repository](https://github.com/guseoh/dark-todo-planner) · [Web](https://dark-todo-planner.guseoh.workers.dev/)
-
-## Learning & Writing
-
-- **[Mini Tomcat](https://github.com/guseoh/mini-tomcat)** — Java 표준 라이브러리로 HTTP 서버·서블릿 컨테이너 내부 동작을 단계적으로 학습하는 프로젝트 (현재 기반 단계)
-- **[Tech Blog](https://guseoh.github.io/)** — Java, Spring, JPA, HTTP, 네트워크와 인프라를 이해하고 검증한 내용을 정리하는 기록 공간
-
-## Technologies
-
-| Area | Technologies |
-| --- | --- |
-| Backend | Java · Spring Boot · Spring Security · JPA / Hibernate |
-| Data | MySQL · PostgreSQL · Flyway |
-| Infrastructure & Quality | Docker · Nginx · GitHub Actions · Prometheus · Grafana · JUnit |
-| Frontend & Web | React · Next.js · TypeScript · Astro |
-
-## Recent Writing
+Java·Spring·JPA·HTTP·인프라를 학습하고 확인한 내용을 [기술 블로그](https://guseoh.github.io/)에 기록하고 있습니다.
 
 <!-- BLOG-POST-LIST:START -->
 - [JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?](https://guseoh.github.io/blog/jpa/persistence-context/)
@@ -73,4 +58,20 @@ Java·Spring·CS 개념을 구조화해 학습하고, 콘텐츠와 개인 학습
 - [Spring Security는 무엇을 해결할까?](https://guseoh.github.io/blog/security/basic3/)
 <!-- BLOG-POST-LIST:END -->
 
-[More posts](https://guseoh.github.io/blog/)
+[전체 글 보기](https://guseoh.github.io/blog/)
+
+---
+
+## GitAnimals
+
+<div align="center">
+
+<a href="https://www.gitanimals.org/">
+  <img
+    src="https://render.gitanimals.org/farms/guseoh"
+    width="600"
+    alt="GitAnimals Farm"
+  />
+</a>
+
+</div>

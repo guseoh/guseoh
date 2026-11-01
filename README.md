@@ -138,11 +138,11 @@ Java·Spring·CS 개념을 영역과 주제별로 구조화하고 학습 기록�
 학습과 구현 과정에서 확인한 내용을 [기술 블로그](https://guseoh.github.io/)에 기록합니다.
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://guseoh.github.io/blog/jpa/persistence-context/"><strong>JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?</strong></a>
+<p><a href="https://guseoh.github.io/blog/jpa/persistence-context/"><strong>JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?</strong></a><br/>
 엔티티 상태와 1차 캐시, 변경 감지, 플러시의 동작 원리</p>
-<p><a href="https://guseoh.github.io/blog/jpa/relationship-mapping/"><strong>JPA 연관관계 매핑: 객체 참조와 외래 키</strong></a>
+<p><a href="https://guseoh.github.io/blog/jpa/relationship-mapping/"><strong>JPA 연관관계 매핑: 객체 참조와 외래 키</strong></a><br/>
 객체 참조와 외래 키로 이해하는 JPA 연관관계 매핑</p>
-<p><a href="https://guseoh.github.io/blog/security/basic3/"><strong>Spring Security는 무엇을 해결할까?</strong></a>
+<p><a href="https://guseoh.github.io/blog/security/basic3/"><strong>Spring Security는 무엇을 해결할까?</strong></a><br/>
 웹 애플리케이션에서 인증과 인가를 직접 처리할 때 생기는 문제를 살펴보고, Spring Security가 맡는 역할을 알아본다.</p>
 <!-- BLOG-POST-LIST:END -->
 

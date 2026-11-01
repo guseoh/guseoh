@@ -26,7 +26,7 @@ jobs:
         with:
           feed_list: "https://guseoh.github.io/rss.xml"
           max_post_count: 3
-          template: '<p><a href="$url">$title</a></p>$newline'
+          template: '<p><sub>0$counter</sub> &emsp; <a href="$url">$title</a></p>$newline'
           commit_message: "chore: update latest blog posts"
           committer_username: "blog-post-bot"
           committer_email: "blog-post-bot@example.com"

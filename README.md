@@ -135,15 +135,13 @@ Java·Spring·CS 개념을 영역과 주제별로 구조화하고 학습 기록�
 
 ## Latest Blog Posts
 
-Java·Spring·JPA·HTTP·인프라 관련 학습과 검증 과정을 [기술 블로그](https://guseoh.github.io/)에 정리하고 있습니다.
-
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://guseoh.github.io/blog/jpa/persistence-context/">JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?</a></p>
-<p><a href="https://guseoh.github.io/blog/jpa/relationship-mapping/">JPA 연관관계 매핑: 객체 참조와 외래 키</a></p>
-<p><a href="https://guseoh.github.io/blog/security/basic3/">Spring Security는 무엇을 해결할까?</a></p>
+<p><sub>01</sub> &emsp; <a href="https://guseoh.github.io/blog/jpa/persistence-context/">JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?</a></p>
+<p><sub>02</sub> &emsp; <a href="https://guseoh.github.io/blog/jpa/relationship-mapping/">JPA 연관관계 매핑: 객체 참조와 외래 키</a></p>
+<p><sub>03</sub> &emsp; <a href="https://guseoh.github.io/blog/security/basic3/">Spring Security는 무엇을 해결할까?</a></p>
 <!-- BLOG-POST-LIST:END -->
 
-[전체 글 보기](https://guseoh.github.io/blog/)
+<p align="right"><a href="https://guseoh.github.io/blog/">모든 글 보기</a></p>
 
 ---
 
@@ -152,11 +150,7 @@ Java·Spring·JPA·HTTP·인프라 관련 학습과 검증 과정을 [기술 블
 <div align="center">
 
 <a href="https://www.gitanimals.org/">
-  <img src="./assets/gitanimals-farm.svg" width="720" alt="GitAnimals Farm — 마지막으로 저장된 농장 이미지 또는 대체 이미지" />
+  <img src="https://render.gitanimals.org/farms/guseoh" width="720" alt="GitAnimals Farm" />
 </a>
-
-<p><sub>매일 최신 농장 이미지로 갱신합니다. 서비스에 연결되지 않을 때는 마지막으로 저장한 이미지를 유지합니다.</sub></p>
-
-<a href="https://render.gitanimals.org/farms/guseoh">실시간 Farm 보기</a>
 
 </div>

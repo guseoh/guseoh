@@ -24,39 +24,48 @@ Java와 Spring으로 백엔드 시스템을 만들고, 설계한 내용을 코�
 
 ## Projects
 
-### <a href="https://github.com/guseoh/pawcycle-commerce">PawCycle Commerce</a> <img src="https://img.shields.io/badge/FEATURED-B88C48?style=flat-square" height="19" alt="Featured project" />
+### Featured Project
 
-**정기배송의 전체 흐름과 데이터 정합성을 다루는 커머스 서비스**
+<details>
+<summary><strong>PawCycle Commerce</strong> — 반려동물 소모품 구매와 정기배송</summary>
 
-상품 구매·구독 변경·배송 일정 관리까지 구현했습니다. 중복 요청을 안전하게 처리하고, 구독별 실패를 격리하며, SQL 조회 성능을 측정해 개선했습니다.
+<br>
 
-**멱등성** · **트랜잭션 실패 격리** · **N+1 측정 및 개선**
+정기배송의 전체 흐름을 구현하면서 데이터 정합성과 운영 안정성을 검증하는 커머스 프로젝트입니다. 상품 구매·구독 변경·배송 일정 관리부터 멱등성, 구독별 트랜잭션 실패 격리, N+1 측정 및 개선까지 다루고 있습니다.
+
+**핵심 경험** · 멱등성 · 트랜잭션 실패 격리 · N+1 측정 및 개선
 
 [Repository](https://github.com/guseoh/pawcycle-commerce) · [설계·검증 기록](https://github.com/guseoh/pawcycle-commerce#readme)
 
----
+</details>
 
-### <a href="https://github.com/guseoh/csforge">CSForge</a> <img src="https://img.shields.io/badge/LEARNING-456A9C?style=flat-square" height="19" alt="Learning project" />
+### Learning Projects
 
-**CS 지식과 개인 학습 이력을 함께 관리하는 플랫폼**
+<details>
+<summary><strong>CSForge</strong> — CS 개념 및 학습 이력 관리 플랫폼</summary>
 
-Java·Spring·CS 개념을 주제별로 구조화하고 학습 기록과 연결했습니다. 콘텐츠를 반복해서 가져오거나 동기화할 때 기존 학습 데이터를 보호하는 과정을 설계했습니다.
+<br>
 
-**콘텐츠 모델링** · **Preview / Diff / Confirm** · **데이터 동기화**
+Java·Spring·CS 개념을 영역과 주제별로 구조화하고 학습 기록과 연결한 플랫폼입니다. 콘텐츠를 반복해서 가져오거나 동기화할 때 기존 학습 데이터를 보호하는 흐름도 구현했습니다.
+
+**핵심 경험** · 콘텐츠 모델링 · Preview / Diff / Confirm · 데이터 동기화
 
 [Repository](https://github.com/guseoh/csforge) · [Live Demo](https://csforge-five.vercel.app/)
 
----
+</details>
 
-### <a href="https://github.com/guseoh/dark-todo-planner">Dark Todo Planner</a> <img src="https://img.shields.io/badge/LEARNING-456A9C?style=flat-square" height="19" alt="Learning project" />
+<details>
+<summary><strong>Dark Todo Planner</strong> — 일정·프로젝트·메모 통합 플래너</summary>
 
-**할 일부터 일정·프로젝트·메모까지 연결하는 개인 플래너**
+<br>
 
-월간·주간 캘린더와 프로젝트 Kanban, 메모 편집 기능을 만들었습니다. 실제 사용성을 개선하면서 브라우저 E2E 테스트, Cloudflare D1 백업과 배포를 구성했습니다.
+할 일·월간/주간 캘린더·프로젝트 Kanban·메모를 연결한 개인 작업 관리 웹 앱입니다. 사용 경험을 개선하면서 E2E 테스트, Cloudflare D1 백업 및 배포 자동화를 구성했습니다.
 
-**작업 관리 UX** · **E2E 검증** · **백업 및 배포 자동화**
+**핵심 경험** · 작업 관리 UX · E2E 검증 · 백업 및 배포 자동화
 
 [Repository](https://github.com/guseoh/dark-todo-planner) · [Live Demo](https://dark-todo-planner.guseoh.workers.dev/)
+
+</details>
 
 ---
 

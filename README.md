@@ -12,15 +12,8 @@ Java와 Spring으로 백엔드 시스템을 만들고, 설계한 내용을 코�
 
 </div>
 
----
 
-## About
 
-요구사항을 도메인과 API로 풀어내는 설계 과정에 관심이 있습니다. 기능 구현 이후에는 트랜잭션, 데이터 정합성, 성능, 장애 상황을 재현하고 확인하는 것을 중요하게 생각합니다.
-
-> **Current Focus** · Software Design / AI-assisted Development / Reliability
-
----
 
 ## Projects
 

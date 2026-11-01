@@ -16,7 +16,15 @@ Java와 Spring을 중심으로 백엔드 개발과 시스템 설계를 공부하
 
 ## About
 
-백엔드의 **API·데이터 모델 설계**부터 트랜잭션과 데이터 정합성, 성능 측정과 운영 안정성까지 관심을 두고 있습니다. 구현 과정에서 선택한 설계와 검증 결과를 기록하며, **Codex와 테스트·CI를 활용한 개발 워크플로**도 함께 발전시키고 있습니다.
+Java·Spring을 기반으로 백엔드 시스템을 개발하면서 기능이 동작하는 이유와 설계 선택의 근거를 이해하고자 합니다. 구현한 내용을 테스트·측정·운영 관점에서 확인하고, 그 과정에서 배운 내용을 프로젝트와 기술 블로그에 기록합니다.
+
+## Current Focus
+
+**Software Design** · 요구사항, 도메인 모델링, API·데이터 모델과 Trade-off
+
+**AI-assisted Development** · ChatGPT·Codex를 활용한 구현, 코드 리뷰, 검증 워크플로
+
+**Reliability & Operations** · 데이터 정합성, 성능 측정, 관측과 장애 대응
 
 ## Tech Stack
 
@@ -71,41 +79,41 @@ Java와 Spring을 중심으로 백엔드 개발과 시스템 설계를 공부하
 
 #### [PawCycle Commerce](https://github.com/guseoh/pawcycle-commerce)
 
-<sub>Commerce · Subscription · Backend Reliability</sub>
+<sub>COMMERCE / SUBSCRIPTION · JAVA / SPRING</sub>
 
-반려동물 소모품의 일반 구매와 정기배송을 지원하는 커머스 프로젝트입니다. 상품 탐색부터 회원 인증, 정기배송 생성·변경·일정 관리, 주문·결제·배송 상태 모델까지 구현하며 백엔드 설계와 운영 안정성을 다루고 있습니다.
+반려동물 소모품의 일반 구매와 정기배송을 구현하는 커머스 프로젝트입니다. 구매·구독 흐름뿐 아니라 멱등성, 구독 단위 트랜잭션 격리, SQL 조회 성능을 실제 문제와 검증 결과를 바탕으로 개선하고 있습니다.
 
-**주요 구현 및 검증** · 멱등성 기반 중복 요청 방지, 구독별 트랜잭션 실패 격리, SQL 조회 수 측정에 따른 N+1 개선
+**핵심 경험** · 정기배송 생명주기 설계 · 중복 요청 방지 · 실패 격리 · N+1 측정 및 개선
 
 **기술** · Java · Spring Boot · Spring Security · JPA · MySQL · Flyway · Next.js · Docker
 
-[Repository](https://github.com/guseoh/pawcycle-commerce) · [트랜잭션 격리 검증](https://github.com/guseoh/pawcycle-commerce/pull/106) · [멱등성 검증](https://github.com/guseoh/pawcycle-commerce/pull/108)
+[Repository](https://github.com/guseoh/pawcycle-commerce) · [설계 및 검증 기록](https://github.com/guseoh/pawcycle-commerce#readme)
 
 ### Learning Projects
 
 #### [CSForge](https://github.com/guseoh/csforge)
 
-<sub>CS / Backend Learning Platform</sub>
+<sub>BACKEND / CS LEARNING PLATFORM</sub>
 
-Java·Spring·CS 지식을 영역·주제·개념·문항으로 구조화하고 학습 콘텐츠와 개인 학습 기록을 함께 관리하는 플랫폼입니다. 학습 화면뿐 아니라 콘텐츠 데이터가 변경되는 과정의 안전성도 학습·구현하고 있습니다.
+Java·Spring·CS 개념을 체계적으로 학습하기 위해 만든 플랫폼입니다. 개념·문항·학습 이력을 연결하고, 콘텐츠를 가져오거나 동기화할 때 기존 학습 데이터를 보호하는 흐름도 구현했습니다.
 
-**주요 구현 및 검증** · 기본 콘텐츠 준비 및 반복 실행 가능한 가져오기, Preview / Diff / Confirm 절차, 콘텐츠 키 기반 동기화와 기존 학습 데이터 보호
+**핵심 경험** · 학습 콘텐츠 모델링 · Preview / Diff / Confirm · 반복 가능한 데이터 동기화 · 학습 이력 보호
 
-**기술** · Java · Spring Boot · PostgreSQL · Redis · React · TypeScript · Docker
+**기술** · Java · Spring Boot · PostgreSQL · Redis · React · TypeScript
 
-[Repository](https://github.com/guseoh/csforge) · [Web](https://csforge-five.vercel.app/)
+[Repository](https://github.com/guseoh/csforge) · [Live Demo](https://csforge-five.vercel.app/)
 
 #### [Dark Todo Planner](https://github.com/guseoh/dark-todo-planner)
 
-<sub>Personal Productivity Web App</sub>
+<sub>PERSONAL PRODUCTIVITY / WEB APPLICATION</sub>
 
-오늘의 할 일과 월간·주간 캘린더, 프로젝트 관리, 메모·낙서장을 하나의 흐름으로 연결한 개인 작업 관리 웹 앱입니다. 화면 사용성과 데이터 관리, 배포·복구 과정을 함께 개선하고 있습니다.
+할 일·캘린더·프로젝트·메모를 하나의 흐름으로 관리하는 개인용 웹 앱입니다. 사용 경험을 개선하면서 Cloudflare 기반 배포, 브라우저 테스트, 백업·복원까지 개발 전반을 다루고 있습니다.
 
-**주요 구현 및 검증** · 프로젝트 Kanban·마일스톤, WYSIWYG 메모, 통합 검색, 브라우저 E2E 검증 및 암호화된 D1 백업
+**핵심 경험** · 월간·주간 캘린더 · 프로젝트 Kanban · WYSIWYG 메모 · E2E 검증 · D1 데이터 백업
 
 **기술** · React · TypeScript · Hono · Cloudflare Workers · D1 · GitHub Actions
 
-[Repository](https://github.com/guseoh/dark-todo-planner) · [Web](https://dark-todo-planner.guseoh.workers.dev/)
+[Repository](https://github.com/guseoh/dark-todo-planner) · [Live Demo](https://dark-todo-planner.guseoh.workers.dev/)
 
 ---
 
@@ -114,10 +122,12 @@ Java·Spring·CS 지식을 영역·주제·개념·문항으로 구조화하고 
 <div align="center">
 
 <a href="https://www.gitanimals.org/">
-  <img src="https://render.gitanimals.org/farms/guseoh" width="600" alt="GitAnimals Farm" />
+  <img src="./assets/gitanimals-farm.svg" width="720" alt="GitAnimals Farm — 마지막으로 저장된 농장 이미지 또는 대체 이미지" />
 </a>
 
-<p><a href="https://render.gitanimals.org/farms/guseoh">GitAnimals 농장 직접 보기</a></p>
+<p><sub>매일 최신 농장 이미지로 갱신합니다. 서비스에 연결되지 않을 때는 마지막으로 저장한 이미지를 유지합니다.</sub></p>
+
+<a href="https://render.gitanimals.org/farms/guseoh">실시간 Farm 보기</a>
 
 </div>
 

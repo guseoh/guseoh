@@ -28,6 +28,7 @@ Java와 Spring을 중심으로 백엔드 개발과 시스템 설계를 공부하
   <img src="https://img.shields.io/badge/PostgreSQL-30363D?style=flat&amp;logo=postgresql&amp;logoColor=white" height="22" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Docker-30363D?style=flat&amp;logo=docker&amp;logoColor=white" height="22" alt="Docker" />
   <img src="https://img.shields.io/badge/GitHub_Actions-30363D?style=flat&amp;logo=githubactions&amp;logoColor=white" height="22" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Codex-30363D?style=flat&amp;logo=openai&amp;logoColor=white" height="22" alt="Codex" />
   <img src="https://img.shields.io/badge/React-30363D?style=flat&amp;logo=react&amp;logoColor=white" height="22" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-30363D?style=flat&amp;logo=typescript&amp;logoColor=white" height="22" alt="TypeScript" />
 </p>
@@ -44,7 +45,6 @@ Java와 Spring을 중심으로 백엔드 개발과 시스템 설계를 공부하
 
 - **[CSForge](https://github.com/guseoh/csforge)** — Java·Spring·CS 개념을 구조화하고 콘텐츠와 학습 기록을 관리하는 학습 플랫폼입니다. [Web](https://csforge-five.vercel.app/)
 - **[Dark Todo Planner](https://github.com/guseoh/dark-todo-planner)** — Todo·캘린더·프로젝트·메모를 통합한 개인 작업 관리 웹 앱입니다. [Web](https://dark-todo-planner.guseoh.workers.dev/)
-- **[Mini Tomcat](https://github.com/guseoh/mini-tomcat)** — Java 표준 라이브러리를 활용해 HTTP 서버와 서블릿 컨테이너의 원리를 단계별로 학습하는 프로젝트입니다.
 
 ---
 

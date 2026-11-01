@@ -1,0 +1,77 @@
+name: Refresh GitAnimals farm snapshot
+
+on:
+  schedule:
+    - cron: "20 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-gitanimals-farm
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download and validate current farm
+        shell: bash
+        run: |
+          set -euo pipefail
+          download="$(mktemp)"
+          trap 'rm -f "$download"' EXIT
+          if ! curl --fail --silent --show-error --location \
+              --retry 2 --connect-timeout 10 --max-time 40 \
+              --header 'Accept: image/svg+xml' \
+              --output "$download" \
+              "https://render.gitanimals.org/farms/guseoh"; then
+            echo "::warning::GitAnimals is unavailable. Keeping the last saved farm image."
+            exit 0
+          fi
+
+          if ! python3 - "$download" <<'PY'
+          import sys
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          path = Path(sys.argv[1])
+          data = path.read_bytes()
+          if not (100 <= len(data) <= 8_000_000):
+              raise ValueError("Unexpected SVG size")
+          lowered = data.lower()
+          if b"<!doctype" in lowered or b"<!entity" in lowered:
+              raise ValueError("Unsafe SVG declaration")
+          root = ET.fromstring(data)
+          if root.tag not in ("svg", "{http://www.w3.org/2000/svg}svg"):
+              raise ValueError("Response is not SVG")
+          forbidden = {"script", "foreignObject"}
+          if any(node.tag.rsplit("}", 1)[-1] in forbidden for node in root.iter()):
+              raise ValueError("Unexpected SVG content")
+          PY
+          then
+            echo "::warning::GitAnimals returned an invalid SVG. Keeping the last saved image."
+            exit 0
+          fi
+
+          mkdir -p assets
+          cp "$download" assets/gitanimals-farm.svg
+
+      - name: Commit only a changed, valid snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- assets/gitanimals-farm.svg; then
+            echo "No new farm image to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/gitanimals-farm.svg
+          git commit -m "chore: refresh GitAnimals farm snapshot"
+          git push

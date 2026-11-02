@@ -128,8 +128,7 @@ Java·Spring·CS 개념을 영역과 주제별로 구조화하고 학습 기록�
 
 ## Latest Blog Posts
 
-<!-- BLOG-POST-LIST:START -->
-<p><sub>01</sub> &emsp; <a href="https://guseoh.github.io/blog/jpa/persistence-context/">JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?</a></p>
+<!-- BLOG-POST-LIST:START --><p><sub>01</sub> &emsp; <a href="https://guseoh.github.io/blog/jpa/persistence-context/">JPA 영속성 컨텍스트: 엔티티는 어떻게 관리될까?</a></p>
 <p><sub>02</sub> &emsp; <a href="https://guseoh.github.io/blog/jpa/relationship-mapping/">JPA 연관관계 매핑: 객체 참조와 외래 키</a></p>
 <p><sub>03</sub> &emsp; <a href="https://guseoh.github.io/blog/security/basic3/">Spring Security는 무엇을 해결할까?</a></p>
 <!-- BLOG-POST-LIST:END -->
